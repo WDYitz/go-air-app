@@ -5,6 +5,7 @@ import { getCategoryById } from "../../../services/category";
 import { getTripsByCategory } from "../../../services/trips";
 import { styles } from "../../../styles/globals";
 import { Button } from "../../../components/button";
+import FontAwesome from "@expo/vector-icons/AntDesign";
 
 const CategoryScreen = () => {
   const { id } = useLocalSearchParams();
@@ -18,7 +19,7 @@ const CategoryScreen = () => {
   return (
     <View style={styles.container}>
       <View style={localStyle.header}>
-        <Button onPress={() => router.back()} title="Back" />
+        <Button onPress={() => router.back()} title={<FontAwesome name="arrowleft" size={22} />} style={{ width: 50 }} />
         <Text style={localStyle.headerText}>{category.title}</Text>
       </View>
       <FlatList
@@ -53,7 +54,7 @@ const localStyle = StyleSheet.create({
     marginBottom: 20,
   },
   headerText: {
-    fontSize: 18,
+    fontSize: 15,
     fontWeight: "800",
     letterSpacing: 0.5,
     color: "#333",
