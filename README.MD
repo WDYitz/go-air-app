@@ -1,3 +1,5 @@
+## Go-Air e um app de Agência de Viagens 
+
 ### Navigation Structure
 
 - Stack
@@ -6,6 +8,6 @@
     - Main
     - Stack Categories
       - Categories List
-      - Trips list of a single category
-    - About me
+      - Trip list
+    - About
   - Single Trip
