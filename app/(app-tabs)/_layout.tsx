@@ -1,7 +1,7 @@
 import FontAwesome from "@expo/vector-icons/MaterialIcons";
 import { Tabs } from "expo-router";
 
-const RootLayout = () => {
+const TabsLayout = () => {
   return (
     <Tabs screenOptions={tabsOptions.screenOptions}>
       <Tabs.Screen name="discover" options={tabsOptions.discover} />
@@ -11,7 +11,7 @@ const RootLayout = () => {
   );
 }
 
-export default RootLayout;
+export default TabsLayout;
 
 const tabsOptions = {
   screenOptions: {

@@ -1,7 +1,7 @@
 import { Text, StyleSheet, Pressable, type StyleProp, type TextStyle } from "react-native"
 
 interface ButtonProps {
-  title: string
+  title: any
   onPress: () => void
   style?: StyleProp<TextStyle>
 }
